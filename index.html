@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Old School Bitcoin (OSBTC)</title>
+<meta name="description" content="Bitcoin's 2009 emission with a CPU-friendly proof of work. One CPU, one vote. Private testnet.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{--amber:#FFA31A;--bg:#16130F;--fg:#F4E9D4;--mut:#b9ad96;--line:#2e281f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,serif}
+main{max-width:46rem;margin:0 auto;padding:3rem 1rem}
+h1{font-size:2.6rem;line-height:1.1;margin:.5rem 0}
+h1 span{color:var(--amber)}
+h2{color:var(--amber);font-size:1.2rem;margin:2.5rem 0 .5rem;text-transform:uppercase;letter-spacing:.08em}
+.tag{color:var(--mut);font-style:italic}
+.note{border:1px solid var(--amber);padding:.8rem 1rem;border-radius:6px;margin:1.5rem 0}
+table{width:100%;border-collapse:collapse}
+td{padding:.45rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{color:var(--mut);width:45%}
+code{font:.9em ui-monospace,Menlo,monospace;color:var(--amber);word-break:break-all}
+img{width:72px;height:72px}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+<img src="favicon.svg" alt="OSBTC mark">
+<h1>Old School <span>Bitcoin</span></h1>
+<p class="tag">One CPU, one vote.</p>
+<p>OSBTC is a fork of Bitcoin Core with Bitcoin's original 2009 emission and a CPU-friendly proof of work, so ordinary computers can mine it.</p>
+<div class="note"><strong>Status: private testnet.</strong> There is no public network, no coins for sale, and no launch date yet.</div>
+
+<h2>Numbers</h2>
+<table>
+<tr><td>Max supply</td><td>21,000,000 OSBTC</td></tr>
+<tr><td>Block reward</td><td>50 OSBTC, halving every 210,000 blocks</td></tr>
+<tr><td>Block time</td><td>10 minutes</td></tr>
+<tr><td>Difficulty retarget</td><td>Every 2 weeks, as Bitcoin</td></tr>
+<tr><td>Coinbase maturity</td><td>100 blocks</td></tr>
+<tr><td>Premine</td><td>None</td></tr>
+</table>
+
+<h2>Proof of work: OSHash-Y</h2>
+<p>Header &rarr; SHA-256d &rarr; yespower (2 MiB memory) &rarr; SHA3-256 &rarr; compared to the target. The memory-hard step favours CPUs over ASICs.</p>
+
+<h2>Genesis</h2>
+<p><code>Old School Bitcoin 28/Sep/2026 One CPU, one vote</code></p>
+
+<footer>Placeholder site. Final domain and branding to come.</footer>
+</main>
+</body>
+</html>
